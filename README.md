@@ -1,5 +1,5 @@
 <p>1. откройте терминал в папке с репозиторием и вполните команду:</p>
-  <pre><code>sudo docker build -t mydockerbuild-image .</pre></code>
+  <pre><code>$ sudo docker build -t mydockerbuild-image .</pre></code>
 <p>2.</p><pre><code>$ sudo docker run -d --name mydockerbuild-container -p 5555:5432 mydockerbuild-image</code></pre>
 <p>3. в вашем клиенте для управления базами данных внесите следующие данные:</p>
 <ul>
