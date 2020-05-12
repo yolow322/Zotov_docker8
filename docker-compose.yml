@@ -9,7 +9,7 @@ services:
       - 8080:8080
 
   db:
-    image: postgres:latest
+    image: mydockerbuild-image:latest
     restart: always
     ports:
        - 5432:5432
