@@ -11,7 +11,7 @@
 <p>4. чтобы создать дамп введите:</p>
   <pre><code>$ sudo docker exec mydockerbuild-container /usr/bin/pg_dump -U yolow testdb > backup.sql</code></pre>
 <p>5. для восстановления БД из дампа введите:</p>
-  <pre><code>$ sudo docker exec mydockerbuild-container /usr/bin/pg_dump -U yolow testdb -f backup.sql</code></pre>
+  <pre><code>$ sudo docker exec mydockerbuild-container /usr/bin/pg_dump -U yolow testdb < backup.sql</code></pre>
 <p>6. для того чтобы запустить БД в веб-интерфейсе adminer, необходимо ввести(предворительно настроив docker-compose https://docs.docker.com/compose/install):</p>
 <pre><code>$ sudo docker-compose up</code></pre>
 <p>7. зайти на локальный сервер по адресу localhost:8080 и внести эти данные:</p>
